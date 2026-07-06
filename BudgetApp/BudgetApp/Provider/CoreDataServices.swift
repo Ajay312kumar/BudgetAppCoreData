@@ -12,7 +12,7 @@ class CoreDataServices {
     
     let persistContainer: NSPersistentContainer
     
-    private var viewContext: NSManagedObjectContext {
+    var context: NSManagedObjectContext {
         return persistContainer.viewContext
     }
     
